@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "Foiti",
+    "slug": "foiti",
+    "version": "1.3.01",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "scheme": "foiti",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "notification": {
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "Notifications"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.foiti.ios",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.foiti.android",
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "versionCode": 13,
+      "config": {
+        "googleMaps": {
+          "apiKey": "<ADD_GOOGLE_API_KEY_HERE>"
+        }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-imglysdk",
+        {
+          "android": {
+            "modules": [
+              "ui:core",
+              "ui:transform",
+              "ui:filter",
+              "assets:filter-basic"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#ffffff"
+        }
+      ],
+      ["react-native-fbsdk-next",
+      {
+        "appID": "",
+        "clientToken": "",
+        "displayName": "Foiti"
+      }
+    ],
+    ["@react-native-google-signin/google-signin"]
+  ],
+  "extra": {
+    "eas": {
+      "projectId": ""
+      }
+    }
+  }
+}

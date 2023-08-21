@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">Foiti</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
+  <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
+  <string name="facebook_client_token">bb</string>
+  <string name="fb_login_protocol_scheme">fb</string>
+  <string name="facebook_app_id">a3434343434343</string>
+</resources>
